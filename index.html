@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey_form</title>
+    <!--styles-->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <!--project title & description-->
+    <h1 id="title">Survey_form</h1>
+    <p id="description">This is a little form for second project of freecodecamp</p>
+    <!--project title & description end-->
+
+    <!--main section-->
+    <section class="main">
+        <div>
+            <form 
+                id="survey-form" 
+                action=""
+            >
+                <label for="name" id="name-label">Name</label>
+                <input 
+                    id="name" 
+                    type="text"
+                    required
+                    placeholder="Enter your name"
+                >
+                <label for="email" id="email-label">Email</label>
+                <input 
+                    id="email" 
+                    type="email"
+                    required
+                    placeholder="Enter your email"
+                >
+                <label for="number" id="number-label">Number</label>
+                <input 
+                    id="number" 
+                    type="number"
+                    min="1"
+                    max="1"
+                    required
+                    placeholder="Enter your number"
+                >
+
+                <label for="dropdown">Choose your favorite animal</label>
+                <select name="" id="dropdown">
+                    <option value="">--Select an Option--</option>
+                    <option value="lion">Lion</option>
+                    <option value="tiger">Tiger</option>
+                    <option value="mantis">Mantis</option>
+                    <option value="panda">Panda</option>
+                </select>
+
+                <fieldset>
+                    <legend>Which role would you like?</legend>
+                    <input type="radio" name="action" id="frontend" value="frontend">
+                    <label for="frontend">Frontend</label>
+                    <input type="radio" name="action" id="backend" value="backend">
+                    <label for="frontend">Backend</label>
+                    <input type="radio" name="action" id="fullstack" value="Fullstack">
+                    <label for="frontend">Fullstack</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What technologies do you like?</legend>
+                    
+                    <input type="checkbox" name="action" id="tech" value="tech">
+                    <label for="html">Html</label>
+                    <input type="checkbox" name="action" id="tech" value="tech">
+                    <label for="css">Css</label>
+                    <input type="checkbox" name="action" id="tech" value="tech">
+                    <label for="javascript">Javascript</label>
+                    <input type="checkbox" name="action" id="tech" value="tech">
+                    <label for="bootstrap">Bootstap</label>
+                    <input type="checkbox" name="action" id="tech" value="tech">
+                    <label for="react">React</label>
+                    <input type="checkbox" name="action" id="tech" value="tech">
+                    <label for="sass">Sass</label>
+                </fieldset>
+
+                <p>Something you want to add?</p>
+                <textarea name="" id="" cols="50" rows="10" placeholder="Type your message"></textarea>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+        
+    </section>
+    <!--main section end-->
+
+
+
+
+    <!--scripts-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
